@@ -3,21 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>React</title>
   </head>
   <body>
-    <div id="root"></div>
-      <script
-      	crossorigin
-        src="https://unpkg.com/react@18/umd/react.development.js"
-      ></script>
-      <script
-        crossorigin
-        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      ></script> 
+    <h1>Top</h1>
+    <!-- This will work fine bcz react is only considerd about the div id="root"-->
+    <div id="root">
+      <h1>Nikhil is here</h1>
+      <!--
+        Suppose I have this h1 tag in this div so what will happen when we do root.render(Component which will bw renderd )
+        then this h1 tag will be replaced by root.render(Component).
+      -->
+    </div>
+    <h1>Top</h1>
+    <!-- This will work fine bcz react is only considerd about the div id="root"-->
 
-      <script src="app.js"></script>
-    
+    <!-- We can apply react to a specefic portion,i.e. whatever you make the root as react will only work inside the root therfore it is called as a library
+        It can work independently in a small portion of your app as well that is why a library.
+    -->
+
+    <!-- The order of file matters a lot , we cannot make any changes to the order of the file-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="app.js"></script>
   </body>
-</html>  
+</html>
