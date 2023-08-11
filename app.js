@@ -1,3 +1,6 @@
+import React from "react";
+import  ReactDOM  from "react-dom/client";
+
 const heading = React.createElement(
   "h1",
   { id: "heading" },
@@ -15,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "H1 tag"),
+    React.createElement("h1", {}, "This is nick"),
     React.createElement("h2", {}, "H2 tag"),
   ]),
   React.createElement("div", { id: "child1" }, [
@@ -31,3 +34,4 @@ root.render(parent);
  * now i want sibling h2 tag after the h1 tag.
  * so the way to do it is that the third argument to the createElement is can be a single children or if we have to give more than one children we can put them into an array.
  */
+
