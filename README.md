@@ -59,3 +59,17 @@ EX--> npx parcel index.html : Here we are executing the parcel package.
 ### Production build with parcel here we need to remove "main": "app.js" from package.json bcz we specify the entry point in the command itsel like (npx parcel index.html) (npx parcel build index.html)
 
 ### Lets male our app compatable for older versions of browser (browsers list in node_modules) -- we will add browserList in package.json.
+
+                                               ----------------------------LAYING THE FOUNDATION-------------------------------                      
+
+### npm run start and npm run build --> We added the start script in package.json to run our project(npm start) and to build our project for production we use npm run build.
+
+### React Element
+   React.createElement is an object and when we render it on DOM then it becomes an HTML element.
+
+### JSX 
+   -->JSX is a javascript syntax to create react elements.
+   -->JSX is not HTML inside javascript.
+   -->JSX is a HTML like or XML like syntax.
+
+   ### When you console React.createElement variable and a jsx variable they both are one and the same thing.i.e,an object.
