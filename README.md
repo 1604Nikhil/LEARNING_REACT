@@ -73,3 +73,11 @@ EX--> npx parcel index.html : Here we are executing the parcel package.
    -->JSX is a HTML like or XML like syntax.
 
    ### When you console React.createElement variable and a jsx variable they both are one and the same thing.i.e,an object.
+
+   ### const root = ReactDOM.createRoot(document.getElementById('root'))
+    //This above syntax is not a valid js syntax behind the scenes parcel is transpiling the code that JS engine can understand,and parcel do t  he job with help of babel(JS compiler/transpiler).
+
+   ### Behind the Scenes how your jsx code is rendered on DOM.
+      // JSX --> Babel transpiles to React.createElement --> ReactElement(JS Object) --> HTML Element(on DOM).
+      Therefore JSX and React.createElement are on and the same thing.
+      And Babel is converting the code ,JSX to React.createElement.
