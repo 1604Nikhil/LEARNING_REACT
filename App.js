@@ -9,11 +9,14 @@ const jsxHeading = <h1>Heading using JSX</h1>;
 
 const TitleComponent = () => <h1>This is our Title Component</h1>;
 
+const birthDay = 16;
+
 const HeadingComponent = () => {
   return (
     <>
     {/* Component composition. --> Composing components into one another. */}
       <TitleComponent />
+      <p>This is my birthdate : {birthDay}. </p>
       <h2>This is our functional component.</h2>
     </>
   );
