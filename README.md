@@ -88,6 +88,8 @@ EX--> npx parcel index.html : Here we are executing the parcel package.
 
    ### Functional components --> It's just a normal JS function with returns some JSX element or React Element (that JSX is kind of React elememt).
 
+   ### Component composition. --> Composing components into one another.
+
    ### Babel is all transpiling the Components in React code and with help of root.render React renders the code(in HTML ) on the browser that the browser understnads.
 
    ### We can write any valid javascript expressions inside the JSX (in Functional component).
@@ -95,3 +97,20 @@ EX--> npx parcel index.html : Here we are executing the parcel package.
    ### How JSX takes care of cross-site scripting attacks --> whenever some data is inside the {} the browser wont blindly run it it will sanitise the data and then run it.
 
    ### {Title()} , <Title/> , <Title></Title> these all three things are one and the same thing.
+
+### Building our FIrst project --> FOOD ORDERING APP
+
+   Planning things out --> You should exactly know what you are going to build,what is the process of building , how it would look the UI Design. 
+
+   ### What all components our food ordering app has 
+      1.Header
+         -Logo
+         -Nav Items
+      2.Body
+         -Search 
+         -Restarant Container
+            --Restaurant Cart
+      3.Footer
+         -Copyright
+         -Links
+         -Contact
