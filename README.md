@@ -110,6 +110,8 @@ EX--> npx parcel index.html : Here we are executing the parcel package.
          -Search 
          -Restarant Container
             --Restaurant Cart
+               --Image
+               --Name of Res,Star Rating,cuisines,delivery time etc.
       3.Footer
          -Copyright
          -Links

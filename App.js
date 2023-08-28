@@ -42,8 +42,42 @@ const Header = () => {
     </div>
   );
 };
+
+const RestaurantCart = () => {
+  return (
+    <div className="res-card">
+      <img 
+      className="res-logo"
+      src="https://img.freepik.com/free-photo/top-view-fried-meat-slices-with-soup-vegetables-seasonings-dark-blue-desk-vegetable-meal-food-meat-dinner_140725-64814.jpg?size=626&ext=jpg&ga=GA1.1.1963887335.1692898894&semt=ais" alt="rest-logo"></img>
+      <h3>TryMe Foods</h3>
+      <h4>North Indian,Biryani,Chinese</h4>
+      <h4>4.7 *</h4>
+      <h4>16 mins</h4>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        {/* Restaurant cart container */}
+        <RestaurantCart />
+        <RestaurantCart />
+        <RestaurantCart />
+        <RestaurantCart />
+        <RestaurantCart />
+      </div>
+    </div>
+  );
+};
 const AppLayout = () => {
-  return <div className="app">{Header()}</div>;
+  return (
+    <div className="app">
+      {Header()} {Body()}
+    </div>
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
